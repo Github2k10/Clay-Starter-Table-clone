@@ -6,7 +6,8 @@ import "./Body.scss";
 const Body = () => {
   return (
     <>
-      <div className="header app__flex">
+      <div className="body-header app__flex">
+        <div style={{width: "50px"}}></div>
         <div className="header-box">
           <div className="header-left app__flex">
             <input type="text" value="Default View" />
@@ -30,8 +31,8 @@ const Body = () => {
           </div>
           <div className="header-right app__flex">
             <p>0/10 Rows Selected</p>
-            <hr />
-            <div>
+            <div className="hr"></div>
+            <div className="header-location app__flex">
               <img src={images.location} alt="location icon" />
               Find Company Lookalikes
             </div>
