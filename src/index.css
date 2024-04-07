@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, sans-serif;
+  
+  --Titan-White-color: #fefeff;
+  --silver-color: #e6e8ec;
+  --Azure--color: #0383f4;
+  --Bloulder-color: #d6d9df;
+  --Mine-Shift-color: #292929;
+  --Mountain-Meadow-color: #0fcc92;
+  --Malibu-color: #5ab8fe;
+  --Tusscok-color: #cf9b4a;
+  --text-color: #282c35;
+  --text-background-color: #f7f8f9;
+
+  --Athens-Gray-color: #eff1f3;
+  --Astral-color: #3475a8;
+  --Manatee-color: #3475a8;
+  --Mamba-color: #887c8c;
+
+  --Picton-Blue-color: #58a8e8;
+  --Shuttle-Gray-color: #5d6d84;
+  --Royal-Purple-color: #70349c;
+  --Outer-space-color: #222926;
+  --Cornflower-color: #98d2f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  font-family: Inter;
+  white-space: nowrap;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-style {
+  border: 1px solid var(--silver-color);
+}
+
+.box-style {
+  background-color: #f7f8f9;
+  border-radius: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
