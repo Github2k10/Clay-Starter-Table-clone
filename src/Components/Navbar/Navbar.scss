@@ -3,6 +3,7 @@
   display: flex;
   justify-content: right;
   width: 100%;
+  z-index: 1;
 
   .nav{
     display: flex;
@@ -21,7 +22,7 @@
         height: 24px;
       }
 
-      .header{
+      .nav-header{
         font-family: 'Inter';
         padding: 5px 8px;
         font-size: 18px;
@@ -144,10 +145,4 @@
       }
     }
   }
-}
-
-.app__flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

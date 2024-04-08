@@ -55,6 +55,7 @@
         color: var(--text-color);
         font-weight: 500;
         border-radius: 5px;
+        cursor: pointer;
 
         img{
           padding: 0px 5px;
@@ -88,10 +89,107 @@
         font-weight: 600;
         color: #bfc4cd;
         margin-right: 10px;
+        cursor:default;
 
         img{
           margin-right: 5px;
         }
+      }
+    }
+  }
+}
+
+.table-grid{
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  // border: 1px solid black;
+
+  table{
+    border-collapse: collapse;
+    border: 1px solid var(--silver-color);
+    border-left: none;
+    
+    .head-row{
+      height: 32px;
+
+      .column-sr{
+        width: 50px;
+        padding: 10px;
+
+        input{
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0px;
+          width: 0px;
+        }
+
+        .lsdkfj{
+          cursor: pointer;
+          height: 0.875rem;
+          width: 0.875rem;
+          background-color: #E6E8EC;
+          border-radius: 0.25rem;
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          flex: 0 0 auto;
+        }
+
+        .sldfl{
+          background-color: #038ff7;
+        }
+        
+        .sldfsdf{
+          stroke: #E6E8EC;
+        }
+      }
+
+      .head-column{
+        width: 200px;
+        cursor: pointer;
+        border: 1px solid var(--silver-color);
+        
+        div{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img{
+            width: 16px;
+            height: 16px;
+            padding: 5px;
+          }
+        }
+
+        &:active{
+          background-color: #038ff7;
+
+          div{
+            color: white;
+          }
+        }
+
+        &:hover{
+          background-color: #eff1f3;
+        }
+      }
+
+      .add-column{
+        width: 150px;
+        cursor: pointer;
+        border: 1px solid var(--silver-color);
+
+        img{
+          padding: 5px;
+        }
+      }
+
+      .lishdf{
+        display: flex;
       }
     }
   }

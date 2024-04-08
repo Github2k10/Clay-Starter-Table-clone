@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="nav-left">
             <img className="portfolio" src={images.bag} alt="Portfolio" />
             <input
-              className="header"
+              className="nav-header"
               onChange={(e) => onChangeHandler(e)}
               value={title}
             />

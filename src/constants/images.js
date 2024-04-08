@@ -33,6 +33,8 @@ import pause from "../assets/pause.svg";
 import sort from "../assets/sort.svg";
 import location from "../assets/location.svg";
 import sideIcon from "../assets/sideIcon.svg";
+import linkedin from "../assets/linkedin.png";
+import full from '../assets/full.svg'
 
 export default {
   bag,
@@ -70,4 +72,6 @@ export default {
   sort,
   location,
   sideIcon,
+  linkedin,
+  full
 };
