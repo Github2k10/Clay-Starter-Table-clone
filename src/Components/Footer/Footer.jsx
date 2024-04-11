@@ -3,14 +3,29 @@ import React from "react";
 import { images } from "../../constants";
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = ({ setData }) => {
   return (
     <>
       <div className="footer border-style">
         <div className="footer-box">
           <div className="left-box">
-            <div className="app__flex">
-              <img src={images.plusDark} style={{width: "18px", height: "18px"}} alt="Plus icon" />
+            <div
+              className="app__flex"
+              onClick={() => {
+                const newRow = {
+                  column1: "",
+                  column2: "",
+                  column3: "",
+                };
+
+                setData((pre) => [...pre, newRow]);
+              }}
+            >
+              <img
+                src={images.plusDark}
+                style={{ width: "18px", height: "18px" }}
+                alt="Plus icon"
+              />
               New row
             </div>
             <div className="app__flex">
@@ -20,7 +35,11 @@ const Footer = () => {
             <div className="app__flex">
               <img src={images.upload} alt="upload icon" />
               Export
-              <img src={images.downArrawDark} style={{marginLeft: "5px"}} alt="down arraw" />
+              <img
+                src={images.downArrawDark}
+                style={{ marginLeft: "5px" }}
+                alt="down arraw"
+              />
             </div>
             <div className="app__flex">
               <img src={images.shareIcon} alt="share icon" />

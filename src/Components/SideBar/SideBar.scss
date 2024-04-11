@@ -1,80 +1,321 @@
  .sidebar{
   position: fixed;
+  display: grid;
+  grid-template-rows: auto 1fr;
   height: 100%;
   width: 50px;
-  z-index: 1;
+  z-index: 3;
+  overflow: hidden;
+  -webkit-transition: width 0.25s linear;
+  transition: width 0.09s linear;
   background-color: var(--Athens-Gray-color);
 
   .sidebar-top{
-    width: fit-content;
-    margin: 7px;
-    padding: 7px;
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
     border-radius: 5px;
     background-color: white;
-    
+    border: 1px solid var(--silver-color);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
     p{
-      padding: 3px;
       font-size: 12px;
-      font-weight: 500;
-      color: #282c35;
-      font-weight: 400;
-      border-radius: 50px;
+      padding: 2px;
+      border-radius: 10px;
       background-color: var(--Athens-Gray-color);
+      margin-right: 5px;
+    }
+
+    span{
+      display: none;
+      font-size: 14px;
     }
   }
 
   .flexbox{
-    height: 92.5%;
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
 
     .flexbox-top{
       margin-top: 10px;
 
-      div{
-        width: 100%;
-        height: 32px;
+      .sldfjsl{
         display: flex;
         align-items: center;
-        justify-content: center;
+        padding: 6px 10px;
+        cursor: pointer;
+
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color);
 
         img{
-          width: 16px;
-          height: 16px;
+          padding: 2px 5px;
+        }
+
+        span{
+          display: none;
         }
 
         &:hover{
           background-color: var(--silver-color);
         }
       }
+
+      .sidebar-sldfjsl{
+        .lsidhf{
+          margin: 6px 10px;
+          display: flex;
+          align-items: center;
+
+          img{
+            padding: 2px 5px;
+          }
+
+          span{
+            display: none;
+          }
+        }
+
+        .sidebar-search{
+          display: none;
+        }
+
+        .starter-table{
+          display: none;
+        }
+      }
+    }
+
+    .hr{
+      display: none;
+      width: 100%;
+      height: 1px;
+      background-color: var(--silver-color);
     }
 
     .flexbox-bottom{
-      margin-top: 10px;
+      .bottom-oihwes{
+        padding: 6px 10px;
+      }
 
-      div{
-        width: 100%;
-        height: 32px;
+      .bottom-sdlfj{
+        padding: 6px 10px;
         display: flex;
         align-items: center;
-        justify-content: center;
 
-        img{
-          width: 16px;
-          height: 16px;
+        span{
+          display: none;
+          margin-left: 5px;
+          font-size: 14px;
+        }
+      }
+
+      .bottom-lsdjfl{
+        padding: 6px 10px;
+        display: none;
+
+        .owiehrs{
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          font-size: 14px;
+          font-weight: 400;
+          color: #282c35;
         }
 
-        .avtar{
-          width: 24px;
-          height: 24px;
+        .oierhso{
+          height: 12px;
+          border-radius: 25px;
+          margin: 20px 5px 5px 5px;
+          background-color: #2bbf71;
+        }
+
+        .osiernslj{
+          padding: 6px 10px;
+
+          .sdjf{
+            font-size: 14px;
+            font-weight: 400;
+            color: #282c35;
+          }
+
+          .osldf{
+            margin: 5px 0px;
+            font-size: 12px;
+          }
+        }
+
+        .bottom-plan{
+          display: flex;
+          margin: auto;
+          height: 32px;
+          color: white;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          background-color: #0382f7;
+          cursor: pointer;
+
+          img{
+            margin: 0px 5px;
+          }
+
+          &:hover{
+            background-color: #0667d9;
+          }
+        }
+      }
+
+      .bottom-eorhsdf{
+        display: flex;
+        align-items: center;
+
+        img{
+          width: 25px;
+          height: 25px;
+          margin: 5px 6px;
           border-radius: 50px;
         }
 
-        &:hover{
-          background-color: var(--silver-color);
+        span{
+          display: none;
         }
       }
     }
   }
- }
+
+  &:hover{
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    .sidebar-top{
+      width: 200px;
+
+      span{
+        display: block;
+      }
+    }
+
+    .flexbox{
+      .hr{
+        display: block;
+      }
+      .flexbox-top{
+        .sldfjsl{
+          span{
+            display: block;
+          }
+        }
+
+        .sidebar-sldfjsl{
+          margin-top: 20px;
+          cursor: default;
+
+          .lsidhf{
+            span{
+              display: block;
+              font-size: 14px;
+              font-weight: 400;
+              color: var(--text-color);
+            }
+          }
+
+          .sidebar-search{
+            display: flex;
+            align-items: center;
+            margin: 5px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid var(--Azure--color);
+
+
+            img{
+              width: 16px;
+              height: 16px;
+              margin: 0px 5px;
+            }
+
+            input{
+              border: none;
+              outline: none;
+            }
+          }
+
+          .starter-table{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: var(--silver-color);
+
+            div{
+              display: flex;
+              align-items: center;
+
+              img{
+                padding: 2px 5px;
+              }
+            }
+
+            .ohsdfj{
+              padding: 3px;
+              border-radius: 5px;
+              visibility: hidden;
+            }
+
+            &:hover{
+              .ohsdfj{
+                visibility: visible;
+
+                &:hover{
+                  background-color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .flexbox-bottom{
+
+        .bottom-sdlfj{
+          cursor: pointer;
+          span{
+            display: block;
+          }
+
+          &:hover{
+            background-color: var(--silver-color);
+          }
+        }
+
+        .bottom-lsdjfl{
+          display: block;
+        }
+
+        .bottom-oihwes{
+          display: none;
+        }
+
+        .bottom-eorhsdf{
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

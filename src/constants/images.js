@@ -34,7 +34,10 @@ import sort from "../assets/sort.svg";
 import location from "../assets/location.svg";
 import sideIcon from "../assets/sideIcon.svg";
 import linkedin from "../assets/linkedin.png";
-import full from '../assets/full.svg'
+import full from "../assets/full.svg";
+import deteleBtn from "../assets/delete-btn.svg";
+import downloadLight from "../assets/download-light.svg";
+import planLight from "../assets/plan-light.svg";
 
 export default {
   bag,
@@ -73,5 +76,8 @@ export default {
   location,
   sideIcon,
   linkedin,
-  full
+  full,
+  deteleBtn,
+  downloadLight,
+  planLight,
 };
